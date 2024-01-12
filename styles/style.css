@@ -6,10 +6,24 @@
 }
 body{
     width: 100%;
+
 }
 .container{
     width: 1120px;
+    height: 100vh;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+h1{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: lato;
+    text-align: center;
+
 }
 .img_container{
     width: 100%;
@@ -67,4 +81,18 @@ body{
 .item11{
     grid-column: 11 / span 2;
     grid-row: 3 / span 1;
+}
+
+@media screen and (max-width:575px) {
+    .img_container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .img_container div{
+        width: 100%;
+    }
+    .img_container div img{
+        width: 100%;
+    }
 }
